@@ -1,0 +1,219 @@
+{
+  "dataset": "data/ood/challenge_2026_v0.csv",
+  "n": 85,
+  "label_counts": {
+    "penipuan": 40,
+    "normal": 25,
+    "promo": 20
+  },
+  "model_version": "baseline-wordchar-lr-202610230837",
+  "threshold": 0.3703,
+  "model_only": {
+    "n": 85,
+    "macro_f1": 0.5973728901674003,
+    "accuracy": 0.6,
+    "per_class": {
+      "normal": {
+        "precision": 0.5833333333333334,
+        "recall": 0.84,
+        "f1": 0.6885245901639344,
+        "support": 25
+      },
+      "penipuan": {
+        "precision": 0.6923076923076923,
+        "recall": 0.45,
+        "f1": 0.5454545454545454,
+        "support": 40
+      },
+      "promo": {
+        "precision": 0.5217391304347826,
+        "recall": 0.6,
+        "f1": 0.5581395348837209,
+        "support": 20
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "normal",
+        "penipuan",
+        "promo"
+      ],
+      "matrix": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          12,
+          18,
+          10
+        ],
+        [
+          3,
+          5,
+          12
+        ]
+      ]
+    },
+    "fraud_roc_auc": 0.7966666666666666,
+    "fraud_pr_auc": 0.7459382220368519
+  },
+  "model_plus_policy": {
+    "n": 85,
+    "macro_f1": 0.7359623498864005,
+    "accuracy": 0.7529411764705882,
+    "per_class": {
+      "normal": {
+        "precision": 0.7777777777777778,
+        "recall": 0.84,
+        "f1": 0.8076923076923077,
+        "support": 25
+      },
+      "penipuan": {
+        "precision": 0.7948717948717948,
+        "recall": 0.775,
+        "f1": 0.7848101265822784,
+        "support": 40
+      },
+      "promo": {
+        "precision": 0.631578947368421,
+        "recall": 0.6,
+        "f1": 0.6153846153846154,
+        "support": 20
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "normal",
+        "penipuan",
+        "promo"
+      ],
+      "matrix": [
+        [
+          21,
+          3,
+          1
+        ],
+        [
+          3,
+          31,
+          6
+        ],
+        [
+          3,
+          5,
+          12
+        ]
+      ]
+    },
+    "fraud_roc_auc": 0.7966666666666666,
+    "fraud_pr_auc": 0.7459382220368519
+  },
+  "bootstrap_95ci": {
+    "model_only_fraud_recall": {
+      "point": 0.45,
+      "ci_low": 0.2916118421052632,
+      "ci_high": 0.6046664626682986
+    },
+    "policy_fraud_recall": {
+      "point": 0.775,
+      "ci_low": 0.6314757481940144,
+      "ci_high": 0.8919630156472261
+    },
+    "policy_fraud_precision": {
+      "point": 0.7948717948717948,
+      "ci_low": 0.6666666666666666,
+      "ci_high": 0.923125
+    }
+  },
+  "missed_fraud": [
+    {
+      "modus": "phishing_tarif",
+      "p_fraud": 0.333,
+      "text": "Yth nasabah, mulai bulan ini tarif transfer berubah menjadi Rp150.000/bulan. Jika tidak setuju isi formulir di bri-tarif-baru.xyz sebelum jam 24.00"
+    },
+    {
+      "modus": "deepfake_tokoh",
+      "p_fraud": 0.203,
+      "text": "Pak Menteri sendiri merekomendasikan platform ini. Investasi aman terjamin, 3 hari modal kembali 2x lipat. Klik link di bio sekarang juga"
+    },
+    {
+      "modus": "belanja_luar_platform",
+      "p_fraud": 0.195,
+      "text": "Barang yang kakak checkout belum dibayar. Bayar lewat transfer langsung ke rekening penjual saja ya kak biar lebih murah, jangan lewat aplikasi"
+    },
+    {
+      "modus": "poin_hangus",
+      "p_fraud": 0.163,
+      "text": "Poin BRImo anda sebesar 980.000 akan hangus hari ini. Tukarkan sekarang di brimo-poin.site sebelum kedaluwarsa"
+    },
+    {
+      "modus": "love_scam",
+      "p_fraud": 0.201,
+      "text": "Hai, aku Jessica dari Singapura. Aku butuh bantuanmu menerima kiriman paket hadiah, tapi kamu harus bayar bea cukai dulu 3 juta"
+    },
+    {
+      "modus": "otp_whatsapp",
+      "p_fraud": 0.269,
+      "text": "Kode verifikasi WhatsApp kamu terkirim ke nomor aku karena salah ketik. Tolong kirimkan kode 6 digitnya ke sini ya kak"
+    },
+    {
+      "modus": "pajak_palsu",
+      "p_fraud": 0.321,
+      "text": "Pemberitahuan dari Ditjen Pajak: anda berhak atas restitusi pajak 4,2 juta. Isi data rekening dan kode OTP di form berikut"
+    },
+    {
+      "modus": "kurir_link",
+      "p_fraud": 0.262,
+      "text": "Paket COD kakak sudah sampai. Kurir butuh konfirmasi, klik link untuk cek resi: jne-cekresi.top/track"
+    },
+    {
+      "modus": "arisan_bodong",
+      "p_fraud": 0.176,
+      "text": "Undangan arisan online, setor 1jt hari ini dapat 5jt minggu depan. Sudah banyak yang terbukti, buruan join sebelum kuota penuh"
+    }
+  ],
+  "false_alarms": [
+    {
+      "modus": "notifikasi_bank",
+      "p_fraud": 0.51,
+      "text": "Transaksi QRIS Rp25.000 di WARUNG MAKAN BU SRI berhasil pada 12/10/2026 12:31. Jika bukan Anda, hubungi call center resmi"
+    },
+    {
+      "modus": "notifikasi_ewallet",
+      "p_fraud": 0.399,
+      "text": "Saldo GoPay Anda bertambah Rp50.000 dari top up. Saldo saat ini Rp73.500"
+    },
+    {
+      "modus": "notifikasi_bank",
+      "p_fraud": 0.846,
+      "text": "Rekening anda menerima transfer Rp1.250.000 dari PT MAJU JAYA pada 01/10/2026. Cek mutasi di aplikasi resmi"
+    },
+    {
+      "modus": "promo_isp",
+      "p_fraud": 0.528,
+      "text": "Upgrade ke paket internet rumah 100 Mbps, gratis biaya pemasangan bulan ini. Hubungi sales resmi kami"
+    },
+    {
+      "modus": "promo_travel",
+      "p_fraud": 0.418,
+      "text": "Promo tiket pesawat mulai 399rb ke Bali untuk pembelian hingga akhir bulan. Pesan melalui aplikasi resmi kami"
+    },
+    {
+      "modus": "promo_retail",
+      "p_fraud": 0.43,
+      "text": "Diskon semester baru! Laptop pelajar potongan hingga 1,5 juta dengan cicilan 0% kartu kredit tertentu"
+    },
+    {
+      "modus": "promo_retail",
+      "p_fraud": 0.393,
+      "text": "Belanja kebutuhan dapur minimal 150rb gratis minyak goreng 1 liter di supermarket kami"
+    },
+    {
+      "modus": "promo_ewallet",
+      "p_fraud": 0.381,
+      "text": "Promo spesial pelanggan setia: isi ulang token listrik 100rb dapat cashback 5rb lewat aplikasi kami"
+    }
+  ]
+}

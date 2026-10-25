@@ -1,0 +1,345 @@
+{
+  "model_version": "baseline-wordchar-lr-202610230837",
+  "cv": [
+    {
+      "model": "word_char_tfidf_lr_C2.0",
+      "cv_macro_f1": 0.9449716767117452,
+      "cv_fraud_recall_argmax": 0.9363957597173145
+    },
+    {
+      "model": "word_char_tfidf_lr_C5.0",
+      "cv_macro_f1": 0.9444375634829062,
+      "cv_fraud_recall_argmax": 0.9399293286219081
+    },
+    {
+      "model": "word_char_tfidf_lr_C10.0",
+      "cv_macro_f1": 0.9441441158882101,
+      "cv_fraud_recall_argmax": 0.9399293286219081
+    },
+    {
+      "model": "word_char_tfidf_lr_C20.0",
+      "cv_macro_f1": 0.9439775830341484,
+      "cv_fraud_recall_argmax": 0.9399293286219081
+    },
+    {
+      "model": "word_char_tfidf_lr_C1.0",
+      "cv_macro_f1": 0.9414344024046638,
+      "cv_fraud_recall_argmax": 0.9363957597173145
+    },
+    {
+      "model": "word_char_tfidf_lr_C0.5",
+      "cv_macro_f1": 0.9385107325488417,
+      "cv_fraud_recall_argmax": 0.9293286219081273
+    },
+    {
+      "model": "word_tfidf_lr",
+      "cv_macro_f1": 0.9357468434432645,
+      "cv_fraud_recall_argmax": 0.9399293286219081
+    },
+    {
+      "model": "word_tfidf_complementnb",
+      "cv_macro_f1": 0.9301864639424092,
+      "cv_fraud_recall_argmax": 0.9434628975265018
+    },
+    {
+      "model": "majority",
+      "cv_macro_f1": 0.22176308539944903,
+      "cv_fraud_recall_argmax": 0.0
+    }
+  ],
+  "threshold": {
+    "threshold": 0.3703,
+    "precision": 0.9407665505226481,
+    "recall": 0.9540636042402827,
+    "f2": 0.9513742071881608,
+    "strategy": "max_precision_at_target_recall",
+    "target_recall": 0.95
+  },
+  "test": {
+    "majority": {
+      "argmax": {
+        "n": 171,
+        "macro_f1": 0.22135416666666666,
+        "accuracy": 0.49707602339181284,
+        "per_class": {
+          "normal": {
+            "precision": 0.49707602339181284,
+            "recall": 1.0,
+            "f1": 0.6640625,
+            "support": 85
+          },
+          "penipuan": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 50
+          },
+          "promo": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 36
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "normal",
+            "penipuan",
+            "promo"
+          ],
+          "matrix": [
+            [
+              85,
+              0,
+              0
+            ],
+            [
+              50,
+              0,
+              0
+            ],
+            [
+              36,
+              0,
+              0
+            ]
+          ]
+        },
+        "fraud_roc_auc": 0.5,
+        "fraud_pr_auc": 0.29239766081871343
+      }
+    },
+    "word_tfidf_complementnb": {
+      "argmax": {
+        "n": 171,
+        "macro_f1": 0.9423039923039923,
+        "accuracy": 0.9473684210526315,
+        "per_class": {
+          "normal": {
+            "precision": 0.9759036144578314,
+            "recall": 0.9529411764705882,
+            "f1": 0.9642857142857143,
+            "support": 85
+          },
+          "penipuan": {
+            "precision": 0.9387755102040817,
+            "recall": 0.92,
+            "f1": 0.9292929292929293,
+            "support": 50
+          },
+          "promo": {
+            "precision": 0.8974358974358975,
+            "recall": 0.9722222222222222,
+            "f1": 0.9333333333333333,
+            "support": 36
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "normal",
+            "penipuan",
+            "promo"
+          ],
+          "matrix": [
+            [
+              81,
+              3,
+              1
+            ],
+            [
+              1,
+              46,
+              3
+            ],
+            [
+              1,
+              0,
+              35
+            ]
+          ]
+        },
+        "fraud_roc_auc": 0.9786776859504133,
+        "fraud_pr_auc": 0.9735223268497342
+      }
+    },
+    "word_tfidf_lr": {
+      "argmax": {
+        "n": 171,
+        "macro_f1": 0.9568895500784045,
+        "accuracy": 0.9649122807017544,
+        "per_class": {
+          "normal": {
+            "precision": 0.9882352941176471,
+            "recall": 0.9882352941176471,
+            "f1": 0.9882352941176471,
+            "support": 85
+          },
+          "penipuan": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 50
+          },
+          "promo": {
+            "precision": 0.8780487804878049,
+            "recall": 1.0,
+            "f1": 0.935064935064935,
+            "support": 36
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "normal",
+            "penipuan",
+            "promo"
+          ],
+          "matrix": [
+            [
+              84,
+              0,
+              1
+            ],
+            [
+              1,
+              45,
+              4
+            ],
+            [
+              0,
+              0,
+              36
+            ]
+          ]
+        },
+        "fraud_roc_auc": 0.9854545454545455,
+        "fraud_pr_auc": 0.982469362745098
+      }
+    },
+    "word_char_tfidf_lr_C2.0": {
+      "argmax": {
+        "n": 171,
+        "macro_f1": 0.9502923976608186,
+        "accuracy": 0.9590643274853801,
+        "per_class": {
+          "normal": {
+            "precision": 0.9767441860465116,
+            "recall": 0.9882352941176471,
+            "f1": 0.9824561403508771,
+            "support": 85
+          },
+          "penipuan": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 50
+          },
+          "promo": {
+            "precision": 0.875,
+            "recall": 0.9722222222222222,
+            "f1": 0.9210526315789473,
+            "support": 36
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "normal",
+            "penipuan",
+            "promo"
+          ],
+          "matrix": [
+            [
+              84,
+              0,
+              1
+            ],
+            [
+              1,
+              45,
+              4
+            ],
+            [
+              1,
+              0,
+              35
+            ]
+          ]
+        },
+        "fraud_roc_auc": 0.9806611570247934,
+        "fraud_pr_auc": 0.9785448841452197
+      },
+      "tuned_threshold": {
+        "n": 171,
+        "macro_f1": 0.9502923976608186,
+        "accuracy": 0.9590643274853801,
+        "per_class": {
+          "normal": {
+            "precision": 0.9767441860465116,
+            "recall": 0.9882352941176471,
+            "f1": 0.9824561403508771,
+            "support": 85
+          },
+          "penipuan": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9473684210526315,
+            "support": 50
+          },
+          "promo": {
+            "precision": 0.875,
+            "recall": 0.9722222222222222,
+            "f1": 0.9210526315789473,
+            "support": 36
+          }
+        },
+        "confusion_matrix": {
+          "labels": [
+            "normal",
+            "penipuan",
+            "promo"
+          ],
+          "matrix": [
+            [
+              84,
+              0,
+              1
+            ],
+            [
+              1,
+              45,
+              4
+            ],
+            [
+              1,
+              0,
+              35
+            ]
+          ]
+        },
+        "fraud_roc_auc": 0.9806611570247934,
+        "fraud_pr_auc": 0.9785448841452197
+      },
+      "bootstrap_95ci_tuned": {
+        "macro_f1": {
+          "point": 0.9502923976608186,
+          "ci_low": 0.909256072874494,
+          "ci_high": 0.9835168067226892
+        },
+        "fraud_recall": {
+          "point": 0.9,
+          "ci_low": 0.804854136776662,
+          "ci_high": 0.9787234042553191
+        },
+        "fraud_precision": {
+          "point": 1.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0
+        }
+      }
+    }
+  },
+  "latency": {
+    "p50_ms": 2.027942000040639,
+    "p95_ms": 2.768170999956965
+  },
+  "model_sha256": "5387d0d3f57e1fd2729317d776c31b6493e74b11507b3d31ed07c53054abf914"
+}
