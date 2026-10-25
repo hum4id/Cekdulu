@@ -1,0 +1,86 @@
+{
+  "model_version": "baseline-wordchar-lr-202610230837",
+  "backend": "sklearn",
+  "labels": [
+    "normal",
+    "penipuan",
+    "promo"
+  ],
+  "fraud_threshold": 0.3703,
+  "threshold_selection": {
+    "threshold": 0.3703,
+    "precision": 0.9407665505226481,
+    "recall": 0.9540636042402827,
+    "f2": 0.9513742071881608,
+    "strategy": "max_precision_at_target_recall",
+    "target_recall": 0.95
+  },
+  "selected_model": "word_char_tfidf_lr_C2.0",
+  "trained_on": "train+val (dev set)",
+  "data_source_sha256": "206e8cb15de401b499df4323c58527e9e6eb9e70608bafabeec3516a6d0d717c",
+  "split_sha256": {
+    "train": "65dac6c2d8b3c403ccd49cc0b1d9c072302cc145d79d5dac5ea59f49640fd54b",
+    "val": "ae96b7f36e2810cc2b730df2b3eefd9edf79453a162d9be9c109d91bf87c954a",
+    "test": "fe9d490b80e1fb34a77f1cfff658bd9b93bb8fb726aaadebacc2bfd5124a7047"
+  },
+  "test_metrics_tuned": {
+    "n": 171,
+    "macro_f1": 0.9502923976608186,
+    "accuracy": 0.9590643274853801,
+    "per_class": {
+      "normal": {
+        "precision": 0.9767441860465116,
+        "recall": 0.9882352941176471,
+        "f1": 0.9824561403508771,
+        "support": 85
+      },
+      "penipuan": {
+        "precision": 1.0,
+        "recall": 0.9,
+        "f1": 0.9473684210526315,
+        "support": 50
+      },
+      "promo": {
+        "precision": 0.875,
+        "recall": 0.9722222222222222,
+        "f1": 0.9210526315789473,
+        "support": 36
+      }
+    },
+    "confusion_matrix": {
+      "labels": [
+        "normal",
+        "penipuan",
+        "promo"
+      ],
+      "matrix": [
+        [
+          84,
+          0,
+          1
+        ],
+        [
+          1,
+          45,
+          4
+        ],
+        [
+          1,
+          0,
+          35
+        ]
+      ]
+    },
+    "fraud_roc_auc": 0.9806611570247934,
+    "fraud_pr_auc": 0.9785448841452197
+  },
+  "inference_latency_cpu": {
+    "p50_ms": 2.027942000040639,
+    "p95_ms": 2.768170999956965
+  },
+  "env": {
+    "python": "3.13.17",
+    "sklearn": "1.9.1"
+  },
+  "created_at": "2026-10-23T08:37:18.358438+00:00"
+}
