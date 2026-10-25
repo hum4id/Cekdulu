@@ -1,0 +1,48 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install
+        run: |
+          pip install -r requirements-dev.txt
+          pip install -e ".[train]"
+      - name: Lint
+        run: ruff check src tests scripts && ruff format --check src tests scripts
+      - name: Reproduce data split & model (cek SHA-256 dataset)
+        run: make train PY=python
+      - name: Test
+        run: python -m pytest --cov --cov-report=term-missing --cov-fail-under=75
+      - name: Upload metrics
+        uses: actions/upload-artifact@v4
+        with:
+          name: metrics
+          path: reports/baseline/metrics.json
+
+  docker:
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements-dev.txt && pip install -e ".[train]" && make train PY=python
+      - run: docker build -t cekdulu-api:ci .
+      - name: Smoke test container
+        run: |
+          docker run -d --name api -p 8000:8000 -e CEKDULU_API_KEYS=ci-key-abcdefghijklmnopqrstuvwxyz \
+            -e CEKDULU_HASH_SECRET=ci-secret -e CEKDULU_ENV=production cekdulu-api:ci
+          for i in $(seq 1 30); do curl -fsS localhost:8000/readyz && break; sleep 2; done
+          curl -fsS -X POST localhost:8000/v1/analyze/text -H 'Content-Type: application/json' \
+            -H 'X-API-Key: ci-key-abcdefghijklmnopqrstuvwxyz' -d '{"text":"kirimkan kode OTP ke saya"}'
