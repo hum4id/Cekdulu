@@ -1,0 +1,7 @@
+# Untuk scripts/train_indobert.py (Colab/GPU). Teruji: torch 2.14.1, transformers 5.20.2.
+# Kode juga kompatibel transformers 4.46+ (deteksi warmup_ratio otomatis).
+-r requirements-dev.txt
+torch
+transformers>=4.46
+datasets
+accelerate
