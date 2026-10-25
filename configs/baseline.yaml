@@ -1,0 +1,14 @@
+processed_dir: data/processed
+model_dir: models/baseline
+report_dir: reports/baseline
+seed: 42
+cv_folds: 5
+# Grid regularisasi Logistic Regression (dipilih dengan CV macro-F1 pada train+val)
+c_grid: [0.5, 1.0, 2.0, 5.0, 10.0, 20.0]
+# Target recall kelas penipuan untuk tuning threshold (false negative lebih mahal).
+# Diset 0.95 pada prediksi out-of-fold sebagai margin: threshold yang tepat di batas target
+# cenderung jatuh di bawah target saat diuji pada data baru.
+target_fraud_recall: 0.95
+# Bila selisih CV macro-F1 antar-C <= toleransi, pilih C terkecil (regularisasi lebih kuat).
+selection_tolerance: 0.002
+bootstrap_samples: 1000
