@@ -1,0 +1,49 @@
+# Jalankan:  cp .env.example .env  (isi nilainya)  lalu  docker compose up -d --build
+# Bot via n8n (webhook, butuh URL HTTPS publik)   : profil default (api + n8n)
+# Bot via long-polling (tanpa n8n/ngrok, cadangan): docker compose --profile poller up -d api bot
+services:
+  api:
+    build: .
+    image: cekdulu-api:1.0.0
+    env_file: .env
+    environment:
+      CEKDULU_ENV: production
+    ports: ["8000:8000"]
+    volumes: ["cekdulu-data:/app/var"]
+    restart: unless-stopped
+    read_only: true
+    tmpfs: ["/tmp"]
+    security_opt: ["no-new-privileges:true"]
+
+  n8n:
+    image: docker.n8n.io/n8nio/n8n:latest
+    ports: ["5678:5678"]
+    environment:
+      N8N_HOST: ${N8N_HOST:-localhost}
+      N8N_PROTOCOL: ${N8N_PROTOCOL:-http}
+      WEBHOOK_URL: ${N8N_WEBHOOK_URL:?isi N8N_WEBHOOK_URL dengan URL HTTPS publik (mis. ngrok)}
+      GENERIC_TIMEZONE: Asia/Jakarta
+      TZ: Asia/Jakarta
+      N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
+      CEKDULU_API_URL: http://api:8000
+      CEKDULU_API_KEY: ${CEKDULU_N8N_API_KEY:?isi CEKDULU_N8N_API_KEY (salah satu dari CEKDULU_API_KEYS)}
+    volumes:
+      - n8n-data:/home/node/.n8n
+      - ./n8n/workflows:/workflows:ro
+    depends_on: [api]
+    restart: unless-stopped
+
+  bot:
+    profiles: ["poller"]
+    image: cekdulu-api:1.0.0
+    env_file: .env
+    environment:
+      CEKDULU_ENV: production
+    command: ["python", "-m", "cekdulu.bot"]
+    volumes: ["cekdulu-data:/app/var"]
+    depends_on: [api]
+    restart: unless-stopped
+
+volumes:
+  cekdulu-data:
+  n8n-data:
