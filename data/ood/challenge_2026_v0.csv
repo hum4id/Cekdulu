@@ -1,0 +1,86 @@
+text,label,modus
+"Assalamualaikum, kami mengundang Bapak/Ibu ke acara pernikahan kami. Lihat undangan digital di file terlampir: Undangan_Pernikahan.apk",penipuan,apk_undangan
+"Paket Anda tertahan di gudang karena alamat tidak lengkap. Silakan cek foto paket di aplikasi berikut: LIHAT_FOTO_PAKET.apk",penipuan,apk_kurir
+"[E-TILANG] Kendaraan anda tercatat melanggar lalu lintas. Unduh surat tilang di file berikut untuk melihat bukti: Surat_Tilang.apk",penipuan,apk_tilang
+"Pemberitahuan tagihan BPJS Kesehatan anda menunggak. Download aplikasi cek tagihan berikut agar kepesertaan tidak dinonaktifkan",penipuan,apk_bpjs
+"Yth nasabah, mulai bulan ini tarif transfer berubah menjadi Rp150.000/bulan. Jika tidak setuju isi formulir di bri-tarif-baru.xyz sebelum jam 24.00",penipuan,phishing_tarif
+"Halo kak, saya CS resmi bank. Untuk pembatalan pendaftaran tarif baru, mohon sebutkan kode OTP yang barusan masuk ke HP kakak ya",penipuan,otp_cs
+"Maaf mengganggu, tadi saya salah transfer Rp1.500.000 ke rekening anda. Tolong dikembalikan ke rekening 1234567890 a.n. Siti, saya butuh untuk berobat",penipuan,salah_transfer
+"Ma, ini aku ganti nomor. HP ku rusak. Tolong transfer dulu 2 juta ke rekening temanku ya, nanti sore aku ganti. Jangan bilang siapa-siapa dulu",penipuan,ganti_nomor
+"Selamat! Nomor anda terpilih sebagai pemenang undian Shopee 2026 hadiah utama mobil. Hubungi agen kami di 0812-0000-1234 untuk klaim, biaya admin pajak hadiah 2,5jt",penipuan,undian
+"Dicari karyawan kerja paruh waktu dari rumah. Cukup like dan follow akun Instagram, komisi per tugas 50rb, gaji harian. Daftar via wa.me/6281200000000",penipuan,lowongan_tugas
+"Gabung grup investasi robot trading AI, profit harian 5% pasti untung tanpa risiko. Modal kecil untung besar! Daftar sekarang bit.ly/robot-cuan",penipuan,investasi_robot
+"Pak Menteri sendiri merekomendasikan platform ini. Investasi aman terjamin, 3 hari modal kembali 2x lipat. Klik link di bio sekarang juga",penipuan,deepfake_tokoh
+"Akun DANA anda akan diblokir dalam 24 jam karena aktivitas mencurigakan. Verifikasi segera di dana-verifikasi.online",penipuan,akun_blokir
+"Pinjaman dana cepat cair 5 menit tanpa jaminan tanpa BI checking. Syarat KTP saja, transfer biaya pencairan 300rb terlebih dahulu",penipuan,pinjol_fee
+"Selamat anda mendapatkan cashback 1.000.000 dari GoPay. Untuk pencairan, scan QR berikut lalu masukkan PIN anda untuk menerima dana",penipuan,qris_terima
+"Kak, refund pesanan kakak sudah diproses. Silakan scan QRIS ini untuk menerima pengembalian dana Rp450.000",penipuan,qris_refund
+"Kami dari kepolisian. Nama anda terlibat kasus pencucian uang. Segera transfer dana ke rekening penampungan negara untuk verifikasi, jangan beritahu keluarga",penipuan,polisi_palsu
+"Info dari OJK: dana investasi anda yang hilang dapat dipulihkan. Hubungi tim pemulihan kami, biaya administrasi 750rb",penipuan,recovery_scam
+"Halo, kami HRD PT Pertamina. Anda lolos seleksi, wajib transfer biaya pelatihan dan seragam Rp1.200.000 sebelum tanggal 30",penipuan,lowongan_fee
+"Barang yang kakak checkout belum dibayar. Bayar lewat transfer langsung ke rekening penjual saja ya kak biar lebih murah, jangan lewat aplikasi",penipuan,belanja_luar_platform
+"Poin BRImo anda sebesar 980.000 akan hangus hari ini. Tukarkan sekarang di brimo-poin.site sebelum kedaluwarsa",penipuan,poin_hangus
+"Hai, aku Jessica dari Singapura. Aku butuh bantuanmu menerima kiriman paket hadiah, tapi kamu harus bayar bea cukai dulu 3 juta",penipuan,love_scam
+"Kode verifikasi WhatsApp kamu terkirim ke nomor aku karena salah ketik. Tolong kirimkan kode 6 digitnya ke sini ya kak",penipuan,otp_whatsapp
+"Kami petugas PLN. Meteran listrik anda akan diputus hari ini karena tunggakan. Bayar denda via transfer ke rekening petugas segera",penipuan,pln_palsu
+"Selamat, akun anda terpilih mendapat saldo DANA kaget 500rb. Klaim di link s.id/danakaget2026 lalu login dengan PIN",penipuan,dana_kaget
+"Dapatkan penghasilan jutaan per hari hanya dengan review produk di Tokopedia. Deposit awal 100rb untuk aktivasi akun member VIP",penipuan,task_deposit
+"Kartu ATM anda telah dibekukan. Hubungi call center kami di 0821-0000-5678 dan berikan nomor kartu serta PIN untuk aktivasi ulang",penipuan,atm_beku
+"PERINGATAN: perangkat anda terinfeksi virus. Install aplikasi keamanan ini segera: securityscan.apk",penipuan,apk_keamanan
+"Ibu, anak ibu kecelakaan dan sekarang di IGD. Butuh biaya operasi darurat, segera transfer 10 juta ke rekening dokter jaga",penipuan,darurat_keluarga
+"Promo Black Friday iPhone 17 hanya 2 juta! Stok terbatas, bayar transfer dulu baru dikirim. Order via DM",penipuan,toko_palsu
+"Pemberitahuan dari Ditjen Pajak: anda berhak atas restitusi pajak 4,2 juta. Isi data rekening dan kode OTP di form berikut",penipuan,pajak_palsu
+"Admin grup saham: sinyal trading VVIP hari ini dijamin profit 30%. Titip dana minimal 5jt ke rekening admin",penipuan,titip_dana
+"Hi, my team needs you for online job. Earn 500k-2jt per day. Contact our mentor on Telegram t.me/mentorkerja",penipuan,lowongan_en
+"Paket COD kakak sudah sampai. Kurir butuh konfirmasi, klik link untuk cek resi: jne-cekresi.top/track",penipuan,kurir_link
+"Selamat siang, kami dari Telkomsel. Nomor anda akan dinonaktifkan karena belum registrasi ulang. Balas pesan ini dengan NIK dan kode OTP",penipuan,telko_otp
+"Undangan arisan online, setor 1jt hari ini dapat 5jt minggu depan. Sudah banyak yang terbukti, buruan join sebelum kuota penuh",penipuan,arisan_bodong
+"Akun Shopee kamu menang flash sale. Untuk konfirmasi pengiriman, transfer ongkir 85rb ke rekening kurir ya",penipuan,ongkir_palsu
+"Saya Pak RT. Ada bantuan sosial tunai 2,4 juta untuk warga, ambil dengan scan barcode ini dan masukkan PIN m-banking",penipuan,bansos_qr
+"Mama minta tolong isiin pulsa 200rb ke nomor ini dulu ya, nanti mama ganti. Mama lagi di kantor polisi gak bisa telpon",penipuan,mama_minta_pulsa
+"Kami dari bank, ada transaksi mencurigakan di kartu kredit Anda sebesar 8 juta. Untuk membatalkan, sebutkan CVV dan kode OTP",penipuan,kartu_kredit
+"Nanti jam 7 jadi kumpul di rumah Dina kan? Aku bawa martabak",normal,chat_teman
+"Pak, laporan keuangan bulan September sudah saya kirim ke email ya. Mohon dicek",normal,kerja
+"Kak, besok kuliah jam 8 diganti online lewat Zoom, link dari dosen nyusul di grup kelas",normal,kampus
+"Transaksi QRIS Rp25.000 di WARUNG MAKAN BU SRI berhasil pada 12/10/2026 12:31. Jika bukan Anda, hubungi call center resmi",normal,notifikasi_bank
+"Kode OTP Anda 482913. JANGAN berikan kode ini kepada siapa pun, termasuk petugas bank. Berlaku 5 menit",normal,otp_resmi
+"Paket Anda dengan resi JX1234567890 sedang dalam pengiriman oleh kurir dan diperkirakan tiba hari ini",normal,notifikasi_kurir
+"Ibu sudah sampai rumah, tadi macet banget di jalan. Kamu jangan lupa makan ya",normal,keluarga
+"Rapat koordinasi BEM dipindah ke hari Kamis jam 4 sore di sekretariat",normal,organisasi
+"Terima kasih sudah berbelanja. Pesanan #INV-88921 telah diterima penjual dan sedang dikemas",normal,notifikasi_toko
+"Tagihan listrik Oktober sudah aku bayar lewat aplikasi, nanti patungannya transfer ke aku aja 75rb ya",normal,patungan
+"Dok, jadwal kontrol anak saya bisa dipindah ke Sabtu pagi?",normal,janji_temu
+"Gaji bulan ini sudah masuk, alhamdulillah. Nanti malam kita makan di luar yuk",normal,pribadi
+"Bro, file presentasi final project udah gue upload ke Drive kelompok, tolong review bagian metodologi",normal,tugas
+"Pembayaran UKT semester ganjil berhasil diverifikasi. Simpan bukti pembayaran untuk keperluan administrasi",normal,kampus_resmi
+"Saldo GoPay Anda bertambah Rp50.000 dari top up. Saldo saat ini Rp73.500",normal,notifikasi_ewallet
+"Nanti aku jemput di stasiun jam 5 ya, tunggu di pintu keluar selatan",normal,janji
+"Halo, saya mau tanya apakah kamar kos yang di lantai 2 masih kosong?",normal,tanya
+"Info: kajian rutin malam Jumat diliburkan minggu ini karena ustadz berhalangan",normal,komunitas
+"Mas, motor sudah selesai diservis, bisa diambil sore ini. Totalnya 245 ribu",normal,bengkel
+"Jangan lupa besok bawa KTP asli untuk verifikasi berkas beasiswa di bagian kemahasiswaan",normal,kampus
+"Hasil lab sudah keluar, nanti saya kirim lewat email ya bu",normal,layanan
+"Pesanan GoFood kamu sedang diantar driver, tunggu sebentar ya",normal,notifikasi_app
+"Kak, tugas kelompok bagian aku sudah selesai, tinggal digabung ke slide utama",normal,tugas
+"Jadi berangkat jam berapa besok ke Jogja? Aku sudah pesan tiket kereta",normal,perjalanan
+"Rekening anda menerima transfer Rp1.250.000 dari PT MAJU JAYA pada 01/10/2026. Cek mutasi di aplikasi resmi",normal,notifikasi_bank
+"Diskon 50% semua minuman setiap Senin di gerai kami! Tunjukkan aplikasi member saat bayar. S&K berlaku",promo,promo_fnb
+"Nikmati kuota 30GB 30 hari hanya Rp55 ribu. Beli sekarang di aplikasi resmi MyTelkomsel. S&K berlaku",promo,promo_operator
+"Flash sale 10.10! Gratis ongkir tanpa minimum belanja dan voucher cashback hingga 100rb di aplikasi Shopee",promo,promo_marketplace
+"Buka tabungan baru via aplikasi dan dapatkan bunga spesial 5% p.a. untuk 3 bulan pertama. Info lengkap di situs resmi bank",promo,promo_bank
+"Weekend ceria! Beli 1 gratis 1 untuk semua varian donat hari Sabtu dan Minggu",promo,promo_fnb
+"Upgrade ke paket internet rumah 100 Mbps, gratis biaya pemasangan bulan ini. Hubungi sales resmi kami",promo,promo_isp
+"Promo tiket pesawat mulai 399rb ke Bali untuk pembelian hingga akhir bulan. Pesan melalui aplikasi resmi kami",promo,promo_travel
+"Member Gold dapatkan poin ganda untuk setiap transaksi di atas 200rb selama Oktober. S&K berlaku",promo,promo_loyalty
+"Diskon semester baru! Laptop pelajar potongan hingga 1,5 juta dengan cicilan 0% kartu kredit tertentu",promo,promo_retail
+"Paket Ramadhan hemat: kuota 50GB + nelpon 100 menit cuma Rp75 ribu, aktifkan via *363#",promo,promo_operator
+"Gratis 1 bulan langganan premium untuk pengguna baru. Batalkan kapan saja di pengaturan aplikasi",promo,promo_streaming
+"Grand opening cabang baru! Diskon 30% semua menu selama 3 hari pertama, berlaku dine-in",promo,promo_fnb
+"Cashback 20% maks 25rb pakai e-wallet untuk transaksi pertama di merchant pilihan bulan ini",promo,promo_ewallet
+"Kursus bahasa Inggris online, early bird potongan 40% untuk pendaftaran sebelum 31 Oktober",promo,promo_edukasi
+"Belanja kebutuhan dapur minimal 150rb gratis minyak goreng 1 liter di supermarket kami",promo,promo_retail
+"Voucher diskon 15rb untuk pemesanan makanan pertama kamu hari ini. Kode berlaku sampai pukul 23.59",promo,promo_fnb
+"Asuransi kesehatan keluarga premi mulai 150rb/bulan, konsultasi gratis dengan agen berlisensi kami",promo,promo_asuransi
+"Tukarkan poin kamu dengan voucher belanja di menu Rewards aplikasi resmi. Penawaran terbatas",promo,promo_loyalty
+"Pameran properti akhir pekan: DP 0% dan bebas biaya KPR untuk unit tertentu. Datang ke mall kota",promo,promo_properti
+"Promo spesial pelanggan setia: isi ulang token listrik 100rb dapat cashback 5rb lewat aplikasi kami",promo,promo_ewallet
