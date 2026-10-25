@@ -1,0 +1,17 @@
+.git
+.github
+.venv
+.env
+**/__pycache__
+.pytest_cache
+.ruff_cache
+var
+data
+reports
+notebooks
+demo
+tests
+docs
+n8n
+models/*_smoke
+models/indobert
