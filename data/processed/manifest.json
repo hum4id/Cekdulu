@@ -1,0 +1,40 @@
+{
+  "source": "data/raw/dataset_sms_spam_v1.csv",
+  "source_sha256": "206e8cb15de401b499df4323c58527e9e6eb9e70608bafabeec3516a6d0d717c",
+  "seed": 42,
+  "cleaning": {
+    "rows_raw": 1143,
+    "dropped_label_conflicts": 0,
+    "dropped_duplicates": 3,
+    "rows_clean": 1140
+  },
+  "splits": {
+    "train": {
+      "rows": 798,
+      "label_counts": {
+        "normal": 398,
+        "penipuan": 233,
+        "promo": 167
+      },
+      "sha256": "65dac6c2d8b3c403ccd49cc0b1d9c072302cc145d79d5dac5ea59f49640fd54b"
+    },
+    "val": {
+      "rows": 171,
+      "label_counts": {
+        "normal": 85,
+        "penipuan": 50,
+        "promo": 36
+      },
+      "sha256": "ae96b7f36e2810cc2b730df2b3eefd9edf79453a162d9be9c109d91bf87c954a"
+    },
+    "test": {
+      "rows": 171,
+      "label_counts": {
+        "normal": 85,
+        "penipuan": 50,
+        "promo": 36
+      },
+      "sha256": "fe9d490b80e1fb34a77f1cfff658bd9b93bb8fb726aaadebacc2bfd5124a7047"
+    }
+  }
+}
