@@ -1,0 +1,17 @@
+# Runtime API (versi yang diuji pada build ini). scikit-learn WAJIB sama dengan versi
+# saat model.joblib dibuat (lihat models/baseline/metadata.json -> env.sklearn).
+fastapi==0.161.1
+uvicorn[standard]==0.54.0
+pydantic==2.13.5
+pydantic-settings==2.16.1
+httpx==0.28.1
+python-multipart==0.0.32
+numpy==2.5.3
+pandas==3.0.5
+scikit-learn==1.9.1
+joblib==1.6.0
+opencv-python-headless==5.0.0.93
+pillow==12.3.0
+reportlab==5.0.1
+SQLAlchemy==2.1.6
+prometheus-client==0.26.0
