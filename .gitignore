@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+var/
+*.db
+models/*_smoke/
+reports/*_smoke/
+models/indobert/checkpoints/
+.gradio/
