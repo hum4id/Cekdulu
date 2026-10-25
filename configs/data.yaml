@@ -1,0 +1,7 @@
+raw_path: data/raw/dataset_sms_spam_v1.csv
+# SHA-256 file mentah yang dipakai di laporan evaluasi. Bila berubah, skrip berhenti.
+raw_sha256: 206e8cb15de401b499df4323c58527e9e6eb9e70608bafabeec3516a6d0d717c
+processed_dir: data/processed
+seed: 42
+val_size: 0.15
+test_size: 0.15
